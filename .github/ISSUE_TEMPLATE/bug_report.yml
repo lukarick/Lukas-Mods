@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in one of Luka's mods isn't working.
+title: "[Mod] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If you used the in-game **Report a bug** button, a report file was saved and its folder opened for you. Please drag that file into the **Report file** box below.
+  - type: input
+    id: mod
+    attributes:
+      label: Mod
+      description: Which mod is this about?
+      placeholder: InventoryManager
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Inventory Manager on the tablet
+        2. Click ...
+  - type: dropdown
+    id: crash
+    attributes:
+      label: Did the game crash?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Report file
+      description: Drag the report .txt here (from the in-game Report a bug button). If the game crashed, also paste the crash message text.
