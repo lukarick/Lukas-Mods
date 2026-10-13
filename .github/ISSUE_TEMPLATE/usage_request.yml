@@ -1,0 +1,29 @@
+name: Usage Request
+description: Ask to modify one of Luka's mods, or to use its assets in your own work.
+title: "[Usage Request] "
+labels: ["Usage Request"]
+body:
+  - type: input
+    id: mod
+    attributes:
+      label: Mod
+      placeholder: PartsManager
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What Are You Asking For?
+      options:
+        - Modify the Mod
+        - Use Its Assets (Code, Images) in My Own Work
+        - Something Else
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: What Do You Want to Make?
+      description: Where will it be published, and will it be free?
+    validations:
+      required: true

@@ -1,29 +1,34 @@
-name: Feature request
+name: Feature Request
 description: Suggest an idea or improvement for one of Luka's mods.
-title: "[Mod] "
+title: "[Mod Name] - What's Your Idea?"
 labels: [enhancement]
 body:
   - type: input
     id: mod
     attributes:
       label: Mod
-      placeholder: InventoryManager
+      placeholder: PartsManager
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Mod version
-      placeholder: "1.0.0"
+      label: Mod Version
+      placeholder: "1.0"
   - type: textarea
     id: idea
     attributes:
-      label: Your idea
+      label: Your Idea
       description: What would you like the mod to do?
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: Why would it help?
+      label: Why Would It Help?
       description: How do you play, and what would this make easier?
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Sketches
+      description: Drag in screenshots, a mock-up or a short video, if they help explain the idea.

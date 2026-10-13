@@ -1,52 +1,62 @@
-name: Bug report
+name: Bug Report
 description: Something in one of Luka's mods isn't working.
-title: "[Mod] "
+title: "[Mod Name] - What Went Wrong?"
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! If you used the in-game **Report a bug** button, a report file was saved and its folder opened for you. Please drag that file into the **Report file** box below.
+        Thanks for reporting! If you used the in-game **Report a Bug** button, a report file was saved and its folder opened for you. Please drag that file into the **Report File** box below.
   - type: input
     id: mod
     attributes:
       label: Mod
       description: Which mod is this about?
-      placeholder: InventoryManager
+      placeholder: PartsManager
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Mod version
-      placeholder: "1.0.0"
+      label: Mod Version
+      placeholder: "1.0"
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: What happened?
+      label: What Happened?
       description: What went wrong, and what did you expect to happen instead?
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce
       placeholder: |
-        1. Open the Inventory Manager on the tablet
+        1. Open Parts Manager on the tablet
         2. Click ...
   - type: dropdown
     id: crash
     attributes:
-      label: Did the game crash?
+      label: Did the Game Crash?
       options:
         - "No"
         - "Yes"
     validations:
       required: true
   - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag screenshots or a short video here, if they help show the problem.
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other Mods Installed
+      description: Which other mods are in your ue4ss\Mods\ folder? Add their versions if you know them.
+  - type: textarea
     id: report
     attributes:
-      label: Report file
-      description: Drag the report .txt here (from the in-game Report a bug button). If the game crashed, also paste the crash message text.
+      label: Report File
+      description: Drag the report .txt here (from the in-game Report a Bug button). If the game crashed, also paste the crash message text.
