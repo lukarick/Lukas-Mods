@@ -96,7 +96,7 @@ Delete `...\ue4ss\Mods\PartsManager\`. Parts you bought stay in storage.
 
 ## Compatibility
 
-No known conflicts. Parts Manager was tested alongside other mods for this game, but mods change over time, so there's no promise about how any of them will work with it after an update. If two mods misbehave together, please [report it](https://github.com/lukarick/Lukas-Mods/issues/new/choose).
+No known conflicts. Parts Manager was tested alongside other mods for this game, but mods change over time, so there's no promise about how any of them will work with it after an update. If two mods misbehave together, please [report it](https://github.com/lukas-mods/Lukas-Mods/issues/new/choose).
 
 ## Known Issues
 
